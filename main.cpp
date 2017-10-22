@@ -95,7 +95,7 @@ int find_number_of_neurons(int size){
 			for (int j = 0; j < 4; j++)
 			{
 				Neuron n;
-				n.name =  letra;
+				n.name = letra;
 
 				int *array_binario = binario_roubado(j);
 
@@ -226,139 +226,6 @@ vector<Neuron> find_neurons_by_XY(int x, int y, int neurons_number){
 	cout << n_add.name << endl;
 	neurons_return.push_back(n_add);
 
-
-
-
-	// if ( (qtsX >= 0 && qtsX <= 3) && (qtsY >= 0 && qtsY <= 3) )
-	// {
-	// 	Neuron n = map_neurons.find('a')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "A" << endl;
-	// }
-	// else if ( (qtsX >= 0 && qtsX <= 3) && (qtsY >= 4 && qtsY <= 7) )
-	// {
-	// 	Neuron n = map_neurons.find('b')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "B" << endl;
-	// }
-	// else if ( (qtsX >= 4 && qtsX <= 7) && (qtsY >= 0 && qtsY <= 3) )
-	// {
-	// 	Neuron n = map_neurons.find('c')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "C" << endl;
-	// }
-	// else if ( (qtsX >= 4 && qtsX <= 7) && (qtsY >= 4 && qtsY <= 7) )
-	// {
-	// 	Neuron n = map_neurons.find('d')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "D" << endl;
-	// }
-
-	// if ( (qtsX == 0 || qtsX == 1 || qtsX == 4 || qtsX == 5) && (qtsY == 0 || qtsY == 1 || qtsY == 4 || qtsY == 5) )
-	// {
-	// 	Neuron n = map_neurons.find('e')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "E" << endl;
-	// }
-	// else if ( (qtsX == 0 || qtsX == 1 || qtsX == 4 || qtsX == 5) && (qtsY == 2 || qtsY == 3 || qtsY == 6 || qtsY == 7) )
-	// {
-	// 	Neuron n = map_neurons.find('f')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "F" << endl;
-	// }
-	// else if ( (qtsX == 2 || qtsX == 3 || qtsX == 6 || qtsX == 7) && (qtsY == 0 || qtsY == 1 || qtsY == 4 || qtsY == 5) )
-	// {
-	// 	Neuron n = map_neurons.find('g')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "G" << endl;
-	// }
-	// else if ( (qtsX == 2 || qtsX == 3 || qtsX == 6 || qtsX == 7) && (qtsY == 2 || qtsY == 3 || qtsY == 6 || qtsY == 7) )
-	// {
-	// 	Neuron n = map_neurons.find('h')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "H" << endl;
-	// }
-
-	// if ( (qtsX == 0 || qtsX == 2 || qtsX == 4 || qtsX == 6) && (qtsY == 0 || qtsY == 2 || qtsY == 4 || qtsY == 6) )
-	// {
-	// 	Neuron n = map_neurons.find('i')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "I" << endl;
-	// }
-	// else if ( (qtsX == 0 || qtsX == 2 || qtsX == 4 || qtsX == 6) && (qtsY == 1 || qtsY == 3 || qtsY == 5 || qtsY == 7) )
-	// {
-	// 	Neuron n = map_neurons.find('j')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "J" << endl;
-	// }
-	// else if ( (qtsX == 1 || qtsX == 3 || qtsX == 5 || qtsX == 7) && (qtsY == 0 || qtsY == 2 || qtsY == 4 || qtsY == 6) )
-	// {
-	// 	Neuron n = map_neurons.find('k')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "K" << endl;
-	// }
-	// else if ( (qtsX == 1 || qtsX == 3 || qtsX == 5 || qtsX == 7) && (qtsY == 1 || qtsY == 3 || qtsY == 5 || qtsY == 7) )
-	// {
-	// 	Neuron n = map_neurons.find('l')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "L" << endl;
-	// }
-
-	// // os menores
-	// if (x % 3 == 0 && y % 3 == 0)
-	// {
-	// 	Neuron n = map_neurons.find('m')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "M" << endl;
-	// }
-	// else if (x % 3 == 1 && y % 3 == 0)
-	// {
-	// 	Neuron n = map_neurons.find('p')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "P" << endl;
-	// }
-	// else if (x % 3 == 2 && y % 3 == 0)
-	// {
-	// 	Neuron n = map_neurons.find('s')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "S" << endl;
-	// }
-	// else if (x % 3 == 0 && y % 3 == 1)
-	// {
-	// 	Neuron n = map_neurons.find('n')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "N" << endl;
-	// }
-	// else if (x % 3 == 1 && y % 3 == 1)
-	// {
-	// 	Neuron n = map_neurons.find('q')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "Q" << endl;
-	// }
-	// else if (x % 3 == 2 && y % 3 == 1)
-	// {
-	// 	Neuron n = map_neurons.find('t')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "T" << endl;
-	// }
-	// else if (x % 3 == 0 && y % 3 == 2)
-	// {
-	// 	Neuron n = map_neurons.find('o')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "O" << endl;
-	// }
-	// else if (x % 3 == 1 && y % 3 == 2)
-	// {
-	// 	Neuron n = map_neurons.find('r')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "R" << endl;
-	// }
-	// else if (x % 3 == 2 && y % 3 == 2)
-	// {
-	// 	Neuron n = map_neurons.find('u')->second;
-	// 	neurons_return.push_back(n);
-	// 	// cout << "U" << endl;
-	// }
 
 	return neurons_return;
 }
